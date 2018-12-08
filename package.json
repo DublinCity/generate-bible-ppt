@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^3.0.10"
+    "electron": "^3.0.10",
+    "pptxgenjs": "^2.4.0"
   }
 }

@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Hello, 은성. Great morning!</h2>
+    <form id="form" class="flex-wrapper">
+      <!-- form 이벤트 발생하면 prevent 하고 fetch 실행 ! -->
+      <div class="flex-item">
+        <label for="name">본문? </label>
+        <input id="name" type="text" class="input" name="name" />
+        <ul id="autoComplete"></ul>
+      </div>
+      <div class="flex-item">
+        <label for="chap">몇장? </label>
+        <select id="chap"></select>
+      </div>
+      <div class="flex-item">
+        <label for="startLine">시작? </label>
+        <select id="startLine"></select>
+      </div>
+      <div class="flex-item">
+        <label for="endLine">끝? </label>
+        <select id="endLine"></select>
+      </div>
+    </form>
+    <button id="fetch">get bible text</button>
+    <a id="close">Close this Window</a>
+  </body>
+  <script src="https://rawgit.com/gitbrent/PptxGenJS/master/dist/pptxgen.bundle.js"></script>
+  <script src="makeNameList.js"></script>
+  <script src="app.js"></script>
+</html>
